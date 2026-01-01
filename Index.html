@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cam IT Support Services</title>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --accent: #38bdf8;
+      --dark: #020617;
+      --muted: #64748b;
+      --bg: #f8fafc;
+      --card: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #f8fafc, #eef2ff);
+      color: #0f172a;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(2,6,23,0.85);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 24px;
+    }
+
+    nav a {
+      color: #c7d2fe;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover { color: #fff; }
+
+    /* HERO */
+    header {
+      position: relative;
+      background: radial-gradient(circle at top right, #1e3a8a, #020617 70%);
+      color: #fff;
+      padding: 90px 20px 120px;
+      text-align: center;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -70px;
+      left: 0;
+      width: 100%;
+      height: 140px;
+      background: var(--bg);
+      border-radius: 100% 100% 0 0;
+    }
+
+    header img.logo {
+      position: absolute;
+      top: 22px;
+      left: 28px;
+      width: 120px;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      margin: 0;
+      letter-spacing: -0.04em;
+    }
+
+    header p {
+      margin-top: 14px;
+      font-size: 1.25rem;
+      color: #c7d2fe;
+    }
+
+    header .cta {
+      margin-top: 35px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 32px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 15px 30px rgba(37,99,235,0.45);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 40px rgba(37,99,235,0.6);
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 90px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 55px;
+    }
+
+    /* STATS */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: -40px;
+    }
+
+    .stat {
+      background: var(--card);
+      padding: 30px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .stat h3 {
+      font-size: 2.4rem;
+      color: var(--primary);
+      margin: 0;
+    }
+
+    .stat p { color: var(--muted); }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #ffffff, #f8fafc);
+      border-radius: 20px;
+      padding: 34px;
+      box-shadow: 0 25px 50px rgba(15,23,42,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover { transform: translateY(-8px); }
+
+    .price {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    /* TESTIMONIALS */
+    .testimonial {
+      font-style: italic;
+      color: #334155;
+    }
+
+    .author {
+      margin-top: 15px;
+      font-weight: 700;
+    }
+
+    footer {
+      background: #020617;
+      color: #c7d2fe;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.3rem; }
+      header img.logo { width: 90px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#about">Why Us</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <img src="123456.png" class="logo" />
+  <h1>Netfix Doctor IT Support Services</h1>
+  <p>Enterprise‑Grade IT Solutions for Businesses That Expect Excellence</p>
+  <div class="cta">
+    <a href="#contact" class="btn">Request Support</a>
+  </div>
+</header>
+
+<section class="stats">
+  <div class="stat"><h3>99.9%</h3><p>Uptime Reliability</p></div>
+  <div class="stat"><h3>15+</h3><p>Years IT Experience</p></div>
+  <div class="stat"><h3>500+</h3><p>Issues Resolved</p></div>
+  <div class="stat"><h3>24/7</h3><p>Emergency Coverage</p></div>
+</section>
+
+<section id="services">
+  <h2>Premium IT Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Remote IT Support</h3><p>Immediate expert assistance to keep your systems running flawlessly.</p></div>
+    <div class="card"><h3>On‑Site Support</h3><p>White‑glove on‑location IT services when hands‑on expertise is required.</p></div>
+    <div class="card"><h3>Cloud & Microsoft 365</h3><p>Secure, optimized cloud environments designed for scale and compliance.</p></div>
+    <div class="card"><h3>Cybersecurity</h3><p>Advanced protection, MFA, phishing defense, and compliance readiness.</p></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Transparent Pricing</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Remote Support</h3>
+      <p class="price">$65/hr</p>
+      <p>Billed in 30-minute increments.</p>
+      <a class="btn" href="mailto:medelluscamjunior@gmail.com?subject=IT%20Support%20Ticket%20Request%20Request-Remote&body=Please%20describe%20your%20issue%20below:%0D%0A%0D%0AName:%0D%0ACompany:%0D%0AUrgency:%20Low%20/%20Medium%20/%20High">Request Service</a><br/><br/>
+      <a class="btn" href="https://www.paypal.com/ncp/payment/6L3JS4G923PQW">Checkout</a>
+    </div>
+
+    <div class="card">
+      <h3>On-Site Support</h3>
+      <p class="price">$100/hr</p>
+      <p>1-hour minimum.</p>
+      <a class="btn" href="mailto:medelluscamjunior@gmail.com?subject=IT%20Support%20Ticket%20Request%20Request-Onsite&body=Please%20describe%20your%20issue%20below:%0D%0A%0D%0AName:%0D%0ACompany:%0D%0AUrgency:%20Low%20/%20Medium%20/%20High">Schedule Visit</a><br/><br/>
+      <a class="btn" href="https://www.paypal.com/ncp/payment/4YA63LK24RMFQ">Checkout</a>
+    </div>
+
+    <div class="card">
+      <h3>Managed IT Support</h3>
+      <p class="price">$500/mo</p>
+      <p>Up to 10 elite support hours per month.</p>
+      <a class="btn" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-7YT19218N7414310VNFKJZYI">Subscribe via PayPal</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>Trusted by Professionals</h2>
+  <div class="grid">
+    <div class="card"><p class="testimonial">“Netfix IT transformed our operations. Fast, secure, and extremely professional.”</p><div class="author">— Operations Director</div></div>
+    <div class="card"><p class="testimonial">“Best IT partner we’ve ever worked with. Highly recommended.”</p><div class="author">— Small Business Owner</div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let’s Get Started</h2>
+  <div class="grid">
+    <div class="card"><p><strong>Email:</strong> medelluscamjunior@gmail.com</p><p><strong>Phone:</strong> (908) 499‑5368</p><a class="btn" href="mailto:medelluscamjunior@gmail.com">Open Support Ticket</a></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Netfix IT Support Services. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
